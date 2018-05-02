@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="1 展示当前连接下的所有数据库1show databases; 2 使用数据库my_database1use my_database; 3 展示当前数据库下的所有数据表1show tables;">
+<meta name="description" content="1 展示数据库：show databases; 2 当前用户：select user(); 3 展示数据表：show tables; 4 使用数据库：use testdatabase; 5 查看版本：select version(); 6 删除数据库：drop database testdatabase; 7 创建数据库（设置了字符集）：create database testdatabase d">
 <meta name="keywords" content="MySql">
 <meta property="og:type" content="article">
-<meta property="og:title" content="mysql_windows下mysql常用命令行">
+<meta property="og:title" content="Mysql_Windows下Mysql常用命令行">
 <meta property="og:url" content="https://brucexiaj.github.io/2018/05/01/mysql-windows下mysql常用命令行/index.html">
 <meta property="og:site_name" content="Totoro&#39;s Home">
-<meta property="og:description" content="1 展示当前连接下的所有数据库1show databases; 2 使用数据库my_database1use my_database; 3 展示当前数据库下的所有数据表1show tables;">
+<meta property="og:description" content="1 展示数据库：show databases; 2 当前用户：select user(); 3 展示数据表：show tables; 4 使用数据库：use testdatabase; 5 查看版本：select version(); 6 删除数据库：drop database testdatabase; 7 创建数据库（设置了字符集）：create database testdatabase d">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-01T11:42:18.328Z">
+<meta property="og:updated_time" content="2018-05-02T13:02:01.104Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="mysql_windows下mysql常用命令行">
-<meta name="twitter:description" content="1 展示当前连接下的所有数据库1show databases; 2 使用数据库my_database1use my_database; 3 展示当前数据库下的所有数据表1show tables;">
+<meta name="twitter:title" content="Mysql_Windows下Mysql常用命令行">
+<meta name="twitter:description" content="1 展示数据库：show databases; 2 当前用户：select user(); 3 展示数据表：show tables; 4 使用数据库：use testdatabase; 5 查看版本：select version(); 6 删除数据库：drop database testdatabase; 7 创建数据库（设置了字符集）：create database testdatabase d">
 
 
 
@@ -126,7 +126,7 @@
 
 
 
-  <title>mysql_windows下mysql常用命令行 | Totoro's Home</title>
+  <title>Mysql_Windows下Mysql常用命令行 | Totoro's Home</title>
   
 
 
@@ -270,7 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">mysql_windows下mysql常用命令行</h1>
+          <h1 class="post-title" itemprop="name headline">Mysql_Windows下Mysql常用命令行</h1>
         
 
         <div class="post-meta">
@@ -342,9 +342,17 @@
       
 
       
-        <h4 id="1-展示当前连接下的所有数据库"><a href="#1-展示当前连接下的所有数据库" class="headerlink" title="1 展示当前连接下的所有数据库"></a>1 展示当前连接下的所有数据库</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show databases;</span><br></pre></td></tr></table></figure>
-<h4 id="2-使用数据库my-database"><a href="#2-使用数据库my-database" class="headerlink" title="2 使用数据库my_database"></a>2 使用数据库<em>my_database</em></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">use my_database;</span><br></pre></td></tr></table></figure>
-<h4 id="3-展示当前数据库下的所有数据表"><a href="#3-展示当前数据库下的所有数据表" class="headerlink" title="3 展示当前数据库下的所有数据表"></a>3 展示当前数据库下的所有数据表</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show tables;</span><br></pre></td></tr></table></figure>
+        <p>1 展示数据库：show databases;</p>
+<p>2 当前用户：select user();</p>
+<p>3 展示数据表：show tables;</p>
+<p>4 使用数据库：use testdatabase;</p>
+<p>5 查看版本：select version();</p>
+<p>6 删除数据库：drop database testdatabase;</p>
+<p>7 创建数据库（设置了字符集）：create database testdatabase default charset utf8 collate utf8_general_ci;</p>
+<p>8 删除数据表：drop table table_name;</p>
+<p>9 查看当前所在的数据库：select database();</p>
+<p>10 查询表的字段：show columns from table_name;</p>
+<p>11 查询表的字段的名字以及注释：select COLUMN_NAME,COLUMN_COMMENT from information_schema.columns where table_name=’表名’; </p>
 
       
     </div>
@@ -439,17 +447,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -509,22 +508,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-展示当前连接下的所有数据库"><span class="nav-number">1.</span> <span class="nav-text">1 展示当前连接下的所有数据库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-使用数据库my-database"><span class="nav-number">2.</span> <span class="nav-text">2 使用数据库my_database</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-展示当前数据库下的所有数据表"><span class="nav-number">3.</span> <span class="nav-text">3 展示当前数据库下的所有数据表</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
