@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="算法，数据结构，ACM," />
 
 
 
@@ -79,16 +79,18 @@
 
 
 
-<meta name="description" content="笔记">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Totoro&#39;s Home">
-<meta property="og:url" content="https://brucexiaj.github.io/index.html">
+<meta name="description" content="最近收到了几份笔试邀请，发现大厂都爱考算法问题，真是让人很无语不过也没事，你们爱考什么，我就爱搞什么 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859// AssembleLineProblem.cpp : 定义控制台应用程序的入">
+<meta name="keywords" content="算法，数据结构，ACM">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Algorithm-算法导论装配线问题">
+<meta property="og:url" content="https://brucexiaj.github.io/2018/05/03/Algorithm-算法导论装配线问题/index.html">
 <meta property="og:site_name" content="Totoro&#39;s Home">
-<meta property="og:description" content="笔记">
+<meta property="og:description" content="最近收到了几份笔试邀请，发现大厂都爱考算法问题，真是让人很无语不过也没事，你们爱考什么，我就爱搞什么 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859// AssembleLineProblem.cpp : 定义控制台应用程序的入">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-05-03T14:41:48.373Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Totoro&#39;s Home">
-<meta name="twitter:description" content="笔记">
+<meta name="twitter:title" content="Algorithm-算法导论装配线问题">
+<meta name="twitter:description" content="最近收到了几份笔试邀请，发现大厂都爱考算法问题，真是让人很无语不过也没事，你们爱考什么，我就爱搞什么 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859// AssembleLineProblem.cpp : 定义控制台应用程序的入">
 
 
 
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://brucexiaj.github.io/"/>
+  <link rel="canonical" href="https://brucexiaj.github.io/2018/05/03/Algorithm-算法导论装配线问题/"/>
 
 
 
 
 
-  <title>Totoro's Home</title>
+  <title>Algorithm-算法导论装配线问题 | Totoro's Home</title>
   
 
 
@@ -143,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -237,9 +238,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -269,9 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/03/Algorithm-算法导论装配线问题/" itemprop="url">Algorithm-算法导论装配线问题</a></h1>
+          <h1 class="post-title" itemprop="name headline">Algorithm-算法导论装配线问题</h1>
         
 
         <div class="post-meta">
@@ -343,12 +342,8 @@
       
 
       
-        
-          
-            <p>最近收到了几份笔试邀请，发现大厂都爱考算法问题，真是让人很无语<br>不过也没事，你们爱考什么，我就爱搞什么</p>
+        <p>最近收到了几份笔试邀请，发现大厂都爱考算法问题，真是让人很无语<br>不过也没事，你们爱考什么，我就爱搞什么</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// AssembleLineProblem.cpp : 定义控制台应用程序的入口点。</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"stdafx.h"</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">装配线问题，装配线2条，装配站6个</span></span><br><span class="line"><span class="comment">来源：《算法导论》第四版中文版P192</span></span><br><span class="line"><span class="comment">分类：动态规划，算法，ACM</span></span><br><span class="line"><span class="comment">@Author:XiaJun</span></span><br><span class="line"><span class="comment">@Time:May 3rd,2018</span></span><br><span class="line"><span class="comment">**/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//在装配线上装配的时间</span></span><br><span class="line"><span class="keyword">int</span> assembleTime[<span class="number">2</span>][<span class="number">6</span>] = &#123;&#123;<span class="number">7</span>,<span class="number">9</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">8</span>,<span class="number">4</span>&#125;,&#123;<span class="number">8</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">7</span>&#125;&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//转移的时间</span></span><br><span class="line"><span class="keyword">int</span> transTime[<span class="number">2</span>][<span class="number">6</span>] = &#123;&#123;<span class="number">2</span>,<span class="number">2</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">2</span>,<span class="number">1</span>&#125;,&#123;<span class="number">4</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">1</span>,<span class="number">3</span>,<span class="number">4</span>&#125;&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//最后一道流程装配完成后到下线的时间</span></span><br><span class="line"><span class="keyword">int</span> offLineTime[<span class="number">2</span>][<span class="number">1</span>] = &#123;&#123;<span class="number">3</span>&#125;,&#123;<span class="number">2</span>&#125;&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//求最小值</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">getMin</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">return</span> a &lt; b?a:b;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">//存放到达第几个装配站的最短时间，f[1][1]表示到达第2条装配线的第2个装配站的最短时间</span></span><br><span class="line">	<span class="keyword">int</span> fast[<span class="number">2</span>][<span class="number">6</span>];</span><br><span class="line">	<span class="comment">//初始化，C语言这一点很蛋疼</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; <span class="number">2</span>;i++)</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>;j &lt; <span class="number">6</span>;j++)</span><br><span class="line">			fast[i][j] = <span class="number">0</span>;</span><br><span class="line">	<span class="comment">//初始化装配站1的最短时间</span></span><br><span class="line">	fast[<span class="number">0</span>][<span class="number">0</span>] = transTime[<span class="number">0</span>][<span class="number">0</span>]+assembleTime[<span class="number">0</span>][<span class="number">0</span>];</span><br><span class="line">	fast[<span class="number">1</span>][<span class="number">0</span>] = transTime[<span class="number">1</span>][<span class="number">0</span>]+assembleTime[<span class="number">1</span>][<span class="number">0</span>];</span><br><span class="line"></span><br><span class="line">	<span class="comment">//开始计算</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">1</span>;j &lt; <span class="number">6</span>;j++) &#123;</span><br><span class="line">		<span class="comment">//从同一条生产线直接投送过来所需的时间</span></span><br><span class="line">		<span class="keyword">int</span> sameLine = fast[<span class="number">0</span>][j<span class="number">-1</span>]+assembleTime[<span class="number">0</span>][j];</span><br><span class="line">		<span class="comment">//从另一条生产线转移过来所需的时间</span></span><br><span class="line">		<span class="keyword">int</span> otherLine = fast[<span class="number">1</span>][j<span class="number">-1</span>]+assembleTime[<span class="number">0</span>][j]+transTime[<span class="number">0</span>][j];</span><br><span class="line">		fast[<span class="number">0</span>][j] = getMin(sameLine,otherLine);</span><br><span class="line"></span><br><span class="line">		<span class="comment">//从同一条生产线直接投送过来所需的时间</span></span><br><span class="line">		sameLine = fast[<span class="number">1</span>][j<span class="number">-1</span>]+assembleTime[<span class="number">1</span>][j];</span><br><span class="line">		<span class="comment">//从另一条生产线转移过来所需的时间</span></span><br><span class="line">		otherLine = fast[<span class="number">0</span>][j<span class="number">-1</span>]+assembleTime[<span class="number">1</span>][j]+transTime[<span class="number">1</span>][j];</span><br><span class="line">		fast[<span class="number">1</span>][j] = getMin(sameLine,otherLine);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//最终的结果</span></span><br><span class="line">	<span class="keyword">int</span> result = getMin(fast[<span class="number">0</span>][<span class="number">5</span>]+offLineTime[<span class="number">0</span>][<span class="number">0</span>],fast[<span class="number">1</span>][<span class="number">5</span>]+offLineTime[<span class="number">1</span>][<span class="number">0</span>]);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"最短的装配时间：%d"</span>,result);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-          
-        
       
     </div>
     
@@ -363,321 +358,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://brucexiaj.github.io/2018/05/02/Git-git的常用命令/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="XiaJun">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Totoro's Home">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/02/Git-git的常用命令/" itemprop="url">Git_git的常用命令</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-02T20:51:46+08:00">
-                2018-05-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Git/" itemprop="url" rel="index">
-                    <span itemprop="name">Git</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/算法，数据结构，ACM/" rel="tag"># 算法，数据结构，ACM</a>
           
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>1 初始化:git init</p>
-<p>2 连接远程仓库:git remote add origin <a href="mailto:git@gitlab.haihu.com" target="_blank" rel="noopener">git@gitlab.haihu.com</a>:wangqin/erp-java.git</p>
-<p>3 从远程仓库克隆：git clone <a href="mailto:git@gitlab.haihu.com" target="_blank" rel="noopener">git@gitlab.haihu.com</a>:wangqin/erp-java.git</p>
-<p>4 切换分支：git checkout new_branch</p>
-<p>5 查看分支：git branch，带*为当前的分支</p>
-<p>6 创建并切换分支：git checkout -b new_branch</p>
-<p>7 删除分支：git branch -d new_branch</p>
-<p>8 查看所有分支，包括远程分支：git branch -a</p>
-<p>9 远程更新了，本地未更新，将远程拉取到本地:git pull origin master</p>
-<p>10 本地更新，远程未更新，将本地推送到远程：git push origin master</p>
-<p>11 提交更新：git commit -m “信息”</p>
-<p>12 将所有更新保存到暂存区：git add –all</p>
-<p>13 查看当前分支与xxx分支的区别（commit之后的区别！）：git diff xxx</p>
-<p>14 远程分支的表示：origin/master，比如切换到远程master：git checkout origin/master</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
       
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://brucexiaj.github.io/2018/05/01/mysql-windows下mysql常用命令行/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="XiaJun">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Totoro's Home">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/01/mysql-windows下mysql常用命令行/" itemprop="url">Mysql_Windows下Mysql常用命令行</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-01T18:38:30+08:00">
-                2018-05-01
-              </time>
+              <a href="/2018/05/02/Git-git的常用命令/" rel="next" title="Git_git的常用命令">
+                <i class="fa fa-chevron-left"></i> Git_git的常用命令
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/MySql/" itemprop="url" rel="index">
-                    <span itemprop="name">MySql</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>1 展示数据库：show databases;</p>
-<p>2 当前用户：select user();</p>
-<p>3 展示数据表：show tables;</p>
-<p>4 使用数据库：use testdatabase;</p>
-<p>5 查看版本：select version();</p>
-<p>6 删除数据库：drop database testdatabase;</p>
-<p>7 创建数据库（设置了字符集）：create database testdatabase default charset utf8 collate utf8_general_ci;</p>
-<p>8 删除数据表：drop table table_name;</p>
-<p>9 查看当前所在的数据库：select database();</p>
-<p>10 查询表的字段：show columns from table_name;</p>
-<p>11 查询表的字段的名字以及注释：select COLUMN_NAME,COLUMN_COMMENT from information_schema.columns where table_name=’表名’; </p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -687,138 +397,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://brucexiaj.github.io/2018/04/21/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="XiaJun">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Totoro's Home">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/21/hello-world/" itemprop="url">Hello World你好</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-21T21:28:38+08:00">
-                2018-04-21
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post内容"><a href="#Create-a-new-post内容" class="headerlink" title="Create a new post内容"></a>Create a new post内容</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post Test"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -826,6 +409,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -1056,6 +643,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
