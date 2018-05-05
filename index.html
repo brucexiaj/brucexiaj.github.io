@@ -252,6 +252,149 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://brucexiaj.github.io/2018/05/05/Algorithm-《算法导论》乘法链问题/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="XiaJun">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Totoro's Home">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/05/Algorithm-《算法导论》乘法链问题/" itemprop="url">Algorithm_《算法导论》乘法链问题</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-05T22:47:38+08:00">
+                2018-05-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ACM/" itemprop="url" rel="index">
+                    <span itemprop="name">ACM</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>乘法链问题算是比较好理解的了，晚上写了半个小时就调出来了。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Matrix.cpp : 定义控制台应用程序的入口点。</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"stdafx.h"</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">矩阵的乘法链问题：多个矩阵相乘时，怎么加括号，总的乘法次数最小</span></span><br><span class="line"><span class="comment">比如3个矩阵相乘，可以先计算前两个的积，再乘以第三个，也可以先计算后两个的积</span></span><br><span class="line"><span class="comment">再乘以第一个。两种方法的乘法次数不同。</span></span><br><span class="line"><span class="comment">来源：《算法导论》第四版中文版P205</span></span><br><span class="line"><span class="comment">分类：动态规划，算法，ACM</span></span><br><span class="line"><span class="comment">@Author:XiaJun</span></span><br><span class="line"><span class="comment">@Time:May 5th,2018</span></span><br><span class="line"><span class="comment">**/</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">//6个矩阵，行数和列数</span></span><br><span class="line">	<span class="keyword">int</span> mat[<span class="number">6</span>][<span class="number">2</span>] = &#123;&#123;<span class="number">30</span>,<span class="number">35</span>&#125;,&#123;<span class="number">35</span>,<span class="number">15</span>&#125;,&#123;<span class="number">15</span>,<span class="number">5</span>&#125;,&#123;<span class="number">5</span>,<span class="number">10</span>&#125;,&#123;<span class="number">10</span>,<span class="number">20</span>&#125;,&#123;<span class="number">20</span>,<span class="number">25</span>&#125;&#125;;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//一个5行5列的矩阵，记录最优子结构的值</span></span><br><span class="line">	<span class="keyword">int</span> child[<span class="number">6</span>][<span class="number">6</span>];</span><br><span class="line">	<span class="keyword">int</span> i,j,dis,k = <span class="number">0</span>,min;</span><br><span class="line">	<span class="comment">//初始化该矩阵</span></span><br><span class="line">	<span class="keyword">for</span>(i = <span class="number">0</span>;i &lt; <span class="number">6</span>;i++) &#123;</span><br><span class="line">		<span class="keyword">for</span>(j = <span class="number">0</span>;j &lt; <span class="number">6</span>;j++) &#123;</span><br><span class="line">			child[i][j] = <span class="number">0</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//两个矩阵相乘的最优子结构的值是已知的</span></span><br><span class="line">	<span class="keyword">for</span>(i = <span class="number">0</span>;i &lt; <span class="number">5</span>;i++) &#123;</span><br><span class="line">		child[i][i+<span class="number">1</span>] = mat[i][<span class="number">0</span>]*mat[i][<span class="number">1</span>]*mat[i+<span class="number">1</span>][<span class="number">1</span>];</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//计算所有的最优子结构</span></span><br><span class="line">	<span class="keyword">for</span>(dis = <span class="number">2</span>;dis &lt; <span class="number">6</span>;dis++) &#123;</span><br><span class="line">		<span class="keyword">for</span>(i = <span class="number">0</span>;dis+i &lt; <span class="number">6</span>;i++) &#123;<span class="comment">//i：最优子结构的起始处</span></span><br><span class="line">			j = i+dis;<span class="comment">//j：最优子结构的结束处</span></span><br><span class="line">			min = mat[i][<span class="number">0</span>]*mat[i][<span class="number">1</span>]*mat[j][<span class="number">1</span>]+mat[i+<span class="number">1</span>][j];</span><br><span class="line">			<span class="keyword">for</span>(k = i;k &lt; j;k++) &#123;</span><br><span class="line">				<span class="keyword">int</span> cur = mat[i][<span class="number">0</span>]*mat[k][<span class="number">1</span>]*mat[j][<span class="number">1</span>]+child[i][k]+child[k+<span class="number">1</span>][j];</span><br><span class="line">				min = min &gt; cur?cur:min;</span><br><span class="line">			&#125;</span><br><span class="line">			child[i][j] = min;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"最少的乘法计算次数是：%d"</span>,child[<span class="number">0</span>][<span class="number">5</span>]);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://brucexiaj.github.io/2018/05/03/Algorithm-算法导论装配线问题/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -862,7 +1005,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -884,7 +1027,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
